@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+      <h1>Upperline Twitter</h1>
+
+        <p>User1: <%=@user1.name %></p>
+
+        <ul>
+            <% @tweets.each do |tweet| %>
+                <li><%= tweet.username %>: <%= tweet.message %> </li>
+            <% end %>
+        </ul>
+  </body>
+</html>
+
+
+
+
